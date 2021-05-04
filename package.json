@@ -1,0 +1,30 @@
+{
+  "name": "eslint-config-react-native-ahughes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint -c index.js tests/*.tsx --fix"
+  },
+  "author": "Alan Hughes <hughesno1@gmail.com>",
+  "homepage": "https://github.com/AlanH3160/eslint-config-react-native-ahughes#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlanH3160/eslint-config-react-native-ahughes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlanH3160/eslint-config-react-native-ahughes/issues"
+  },
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "semantic-release": "^17.4.2",
+    "semantic-release-cli": "^5.4.3"
+  },
+  "dependencies": {
+    "@react-native-community/eslint-config": "^2.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "typescript": "^4.2.4"
+  }
+}
