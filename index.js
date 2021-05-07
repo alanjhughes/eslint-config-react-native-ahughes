@@ -18,7 +18,7 @@ module.exports = {
     "react-native/no-raw-text": 0,
     "import/no-extraneous-dependencies": 2,
     "import/extensions": ["error", "never", { "svg": "always" }],
-    "import/order": ["error", { "newlines-between": "always" }],
+    "import/order": 0,
     "import/no-duplicates": 2,
     "import/no-useless-path-segments": 2,
     "import/no-cycle": 0,
