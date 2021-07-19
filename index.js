@@ -47,8 +47,6 @@ module.exports = {
       "error",
       { additionalHooks: "(useMemoOne)" },
     ],
-    "jest/no-identical-title": 2,
-    "jest/valid-expect": 2,
     "no-console": 1,
   },
 };
