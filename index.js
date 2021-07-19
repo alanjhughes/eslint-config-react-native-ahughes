@@ -1,13 +1,15 @@
 module.exports = {
-  "plugins": ["import"],
-  "extends": [
+  plugins: ["import", "@typescript-eslint", "react", "react-native"],
+  extends: [
     "plugin:@typescript-eslint/recommended",
-    "@react-native-community",
+    "plugin:react/recommended",
+    "plugin:react-native/all",
     "plugin:import/typescript",
-    "prettier"
+    "prettier",
+    "prettier/@typescript-eslint",
   ],
-  "parser": "@typescript-eslint/parser",
-  "rules": {
+  parser: "@typescript-eslint/parser",
+  rules: {
     "@typescript-eslint/ban-ts-ignore": 0,
     "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/explicit-member-accessibility": 0,
@@ -18,14 +20,14 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/no-object-literal-type-assertion": 0,
     "@typescript-eslint/no-var-requires": 0,
-    "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
+    "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
     "react-native/no-unused-styles": 2,
     "react-native/split-platform-components": 2,
     "react-native/no-inline-styles": 0,
     "react-native/no-color-literals": 0,
     "react-native/no-raw-text": 0,
     "import/no-extraneous-dependencies": 2,
-    "import/extensions": ["error", "never", { "svg": "always" }],
+    "import/extensions": ["error", "never", { svg: "always" }],
     "import/order": 0,
     "import/no-duplicates": 2,
     "import/no-useless-path-segments": 2,
@@ -43,10 +45,10 @@ module.exports = {
     "react-hooks/rules-of-hooks": 2,
     "react-hooks/exhaustive-deps": [
       "error",
-      { "additionalHooks": "(useMemoOne)" }
+      { additionalHooks: "(useMemoOne)" },
     ],
     "jest/no-identical-title": 2,
     "jest/valid-expect": 2,
-    "no-console": 1
-  }
-}
+    "no-console": 1,
+  },
+};

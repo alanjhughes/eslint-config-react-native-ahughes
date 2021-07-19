@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-react-native-ahughes",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -17,15 +17,18 @@
     "url": "https://github.com/AlanH3160/eslint-config-react-native-ahughes/issues"
   },
   "devDependencies": {
-    "eslint": "^7.25.0",
     "semantic-release": "^17.4.2",
     "semantic-release-cli": "^5.4.3"
   },
   "dependencies": {
     "@react-native-community/eslint-config": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^3.10.1",
-    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.22.1",
-    "typescript": "^4.2.4"
+    "typescript": "^4.2.4",
+    "@typescript-eslint/parser": "^3.10.1",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-native": "^3.11.0"
   }
 }
