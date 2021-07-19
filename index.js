@@ -1,5 +1,11 @@
 module.exports = {
-  plugins: ["import", "@typescript-eslint", "react", "react-native"],
+  plugins: [
+    "import",
+    "@typescript-eslint",
+    "react",
+    "react-native",
+    "react-hooks",
+  ],
   extends: [
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
@@ -26,6 +32,8 @@ module.exports = {
     "react-native/no-inline-styles": 0,
     "react-native/no-color-literals": 0,
     "react-native/no-raw-text": 0,
+    "react-native/sort-styles": 0,
+    "react/display-name": 0,
     "import/no-extraneous-dependencies": 2,
     "import/extensions": ["error", "never", { svg: "always" }],
     "import/order": 0,
