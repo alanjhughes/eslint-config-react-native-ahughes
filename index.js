@@ -1,4 +1,6 @@
 module.exports = {
+  root: true,
+  parser: "@typescript-eslint/parser",
   plugins: [
     "@typescript-eslint",
     "react",
@@ -13,12 +15,11 @@ module.exports = {
     "prettier",
     "prettier/@typescript-eslint",
   ],
-  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    project: "./tsconfig.base.json",
+    project: "./tsconfig.json",
   },
   settings: {
     react: {
