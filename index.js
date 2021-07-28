@@ -18,7 +18,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    project: "./tsconfig.json",
+    project: "./tsconfig.base.json",
   },
   settings: {
     react: {
