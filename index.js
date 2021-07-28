@@ -1,9 +1,14 @@
 module.exports = {
-  plugins: ["import"],
+  plugins: [
+    "@typescript-eslint",
+    "react",
+    "react-native"
+  ],
   extends: [
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:react-native/all",
+    "standard",
     "plugin:react-hooks/recommended",
     "prettier",
     "prettier/@typescript-eslint",
