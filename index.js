@@ -1,32 +1,13 @@
 module.exports = {
   root: true,
   parser: "@typescript-eslint/parser",
-  plugins: [
-    "@typescript-eslint",
-    "react",
-    "react-native"
-  ],
+  plugins: ["import"],
   extends: [
     "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
-    "plugin:react-native/all",
-    "standard",
-    "plugin:react-hooks/recommended",
+    "@react-native-community",
     "prettier",
-    "prettier/@typescript-eslint",
+    "plugin:import/typescript",
   ],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    project: "./tsconfig.json",
-  },
-  settings: {
-    react: {
-      pragma: "React",
-      version: "detect",
-    },
-  },
   rules: {
     "@typescript-eslint/ban-ts-ignore": 0,
     "@typescript-eslint/explicit-function-return-type": 0,
@@ -38,6 +19,7 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/no-object-literal-type-assertion": 0,
     "@typescript-eslint/no-var-requires": 0,
+    "import/no-extraneous-dependencies": 2,
     "import/no-duplicates": 2,
     "import/no-useless-path-segments": 2,
     "import/no-cycle": 0,
@@ -49,6 +31,8 @@ module.exports = {
     "import/no-named-as-default": 0,
     "import/no-unused-modules": 0,
     "import/no-deprecated": 0,
+    "@typescript-eslint/indent": 0,
+    "import/no-anonymous-default-export": 2,
     "react-native/no-color-literals": 0,
     "react-native/no-inline-styles": 0,
     "react-native/no-raw-text": 0,
@@ -57,10 +41,11 @@ module.exports = {
     "no-undef": 0,
     "no-unused-vars": 0,
     "no-use-before-define": "off",
-    quotes: 0,
     "react-native/no-raw-text": 0,
     "react-hooks/rules-of-hooks": 2,
     "react/no-unescaped-entities": 0,
+    camelcase: 0,
+    "no-console": "warn",
     "react/prop-types": "off",
   },
 };
