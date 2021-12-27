@@ -20,6 +20,7 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/no-empty-interface": 0,
     "react-native/sort-styles": 0,
-    "react-native/no-color-literals": 0
+    "react-native/no-color-literals": 0,
+    "no-console": 1
   },
 };
