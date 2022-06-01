@@ -5,16 +5,16 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:react/jsx-runtime",
-    "plugin:import/typescript",
     "plugin:react-native/all",
-    "prettier"
+    "prettier",
   ],
   settings: {
     react: {
       pragma: "React",
-      version: "detect"
-    }
+      version: "detect",
+    },
   },
+  plugins: ["import"],
   rules: {
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/no-object-literal-type-assertion": 0,
