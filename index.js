@@ -1,32 +1,21 @@
 module.exports = {
-  plugins: ["import"],
+  root: true,
+  parser: "@typescript-eslint/parser",
   extends: [
     "plugin:react/recommended",
-    "plugin:react-native/all",
     "plugin:react-hooks/recommended",
-    "prettier",
+    "plugin:react/jsx-runtime",
+    "plugin:import/typescript",
+    "plugin:react-native/all",
+    "prettier"
   ],
-  parser: "@typescript-eslint/parser",
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    project: "./tsconfig.json",
-  },
   settings: {
     react: {
       pragma: "React",
-      version: "detect",
-    },
+      version: "detect"
+    }
   },
   rules: {
-    "@typescript-eslint/ban-ts-ignore": 0,
-    "@typescript-eslint/explicit-function-return-type": 0,
-    "@typescript-eslint/explicit-member-accessibility": 0,
-    "@typescript-eslint/explicit-module-boundary-types": 0,
-    "@typescript-eslint/indent": 0,
-    "@typescript-eslint/member-delimiter-style": 0,
-    "@typescript-eslint/no-empty-interface": 0,
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/no-object-literal-type-assertion": 0,
     "@typescript-eslint/no-var-requires": 0,
