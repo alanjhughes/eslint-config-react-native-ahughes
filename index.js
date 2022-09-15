@@ -6,7 +6,7 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-native/all",
-    "prettier",
+    "plugin:prettier/recommended",
   ],
   settings: {
     react: {
@@ -45,5 +45,10 @@ module.exports = {
     "react/react-in-jsx-scope": 0,
     "react/prop-types": "off",
     "no-console": 1,
+  },
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
 };
