@@ -44,7 +44,7 @@ module.exports = {
     "react/no-unescaped-entities": 0,
     "react/react-in-jsx-scope": 0,
     "react/prop-types": "off",
-    "no-console": 1,
+    "no-console": "warn",
   },
   parserOptions: {
     ecmaFeatures: {
