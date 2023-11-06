@@ -6,22 +6,15 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-native/all",
-<<<<<<< HEAD
-    "plugin:prettier/recommended",
-||||||| parent of d29b7cd (bump deps)
-    "prettier"
-=======
     "prettier",
->>>>>>> d29b7cd (bump deps)
   ],
-  plugins: ["@typescript-eslint"],
+  plugins: ["@typescript-eslint", "import"],
   settings: {
     react: {
       pragma: "React",
       version: "detect",
     },
   },
-  plugins: ["import"],
   rules: {
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/no-object-literal-type-assertion": 0,
@@ -39,7 +32,6 @@ module.exports = {
     "import/no-unused-modules": 0,
     "import/no-deprecated": 0,
     "react-native/no-color-literals": 0,
-<<<<<<< HEAD
     "react-native/no-inline-styles": 0,
     "react-native/no-raw-text": 0,
     "react-native/sort-styles": 0,
@@ -58,11 +50,5 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-||||||| parent of d29b7cd (bump deps)
-    "no-console": 1
-=======
-    "react-native/no-inline-styles": 0,
-    "no-console": 1,
->>>>>>> d29b7cd (bump deps)
   },
 };
