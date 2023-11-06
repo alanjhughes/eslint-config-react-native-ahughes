@@ -11,10 +11,14 @@ const styles = StyleSheet.create({
   },
 });
 
-const App = () => (
-  <View style={styles.container}>
-    <Text>Open up App.js to start working on your app!</Text>
-  </View>
-);
+const App = () => {
+  return (
+    <View style={styles.container}>
+      <Text style={{ color: "black" }}>
+        Open up App.js to start working on your app!
+      </Text>
+    </View>
+  );
+};
 
 export default App;
